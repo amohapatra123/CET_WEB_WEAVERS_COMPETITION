@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		.img{
+			cursor:move;
+		}
+	</style>
+</head>
+<body>
+	<img src="img2.png" class="img" id="me">
+	<textarea></textarea>
+	<script>
+		
+		var imageDragOver= function imageDragOver(evt){
+			evt.stopPropagation();
+			evt.preventDefault();
+		}
+		 var imageDrop =function imageDrop(evt){
+		 	evt.stopPropagation();
+		 	evt.preventDefault();
+		 }
+		 document.addEventListener(($'textarea'),imageDragOver,false);
+		 document.addEventListener(($'textarea'),imageDrop,false);
+	</script>
+
+</body>
+</html>

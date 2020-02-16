@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question3</title>
+	<style >
+		.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 50px;
+		margin: 40px;
+		}
+		.img{
+			margin: 5em;
+			animation:0.8s infinite beatHeart ;
+		}
+		@keyframes beatHeart{
+			0%{
+				transform: scale(1);
+			}
+			25%{
+				transform: scale(1.1);
+			}
+			40%{
+				transform: scale(1);
+			}
+			60%{
+				transform: scale(1.1);
+			}
+			100%{
+				transform: scale(1);
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+	<img src="heart.png"  class="img">
+    </div>
+
+</body>
+</html>
